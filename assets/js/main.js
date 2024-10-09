@@ -7,7 +7,7 @@
     /* 
    MixitUp
    ========================================================================== */
-  $('#portfolio').mixItUp();
+  $('#portfolios').mixItUp();
 
   /* 
    One Page Navigation & wow js
