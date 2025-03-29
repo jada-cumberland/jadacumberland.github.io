@@ -6,6 +6,7 @@
   .services-item .services-content h3 a {
     font-size: 14px;
   }
+  .navbar-brand
 }
 
 /* tablets */
@@ -48,8 +49,10 @@
   .section-sub {
     font-size: 16px;
   }
-  .navbar-brand img {
+  .navbar-brand {
     margin: 5px 0;
+    width: 500px;
+    aspect-ratio: 1;
   }
   #hero-area .contents {
     padding: 100px 0px 60px 0px;
