@@ -125,13 +125,6 @@ ul li, ol li {
   display: inline-block;
 }
 
-.btn:focus,
-.btn:mixitup-control-active {
-  box-shadow: none;
-  outline: none;
-  color: #fff;
-}
-
 .btn-common {
   background-color: #6d2a70;
   position: relative;
