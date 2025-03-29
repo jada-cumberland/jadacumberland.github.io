@@ -80,12 +80,12 @@
     /* Back Top Link active
     ========================================================*/
       var offset = 200;
-      var duration = 500;
+      var duration = 400;
       $(window).scroll(function() {
         if ($(this).scrollTop() > offset) {
-          $('.back-to-top').fadeIn(400);
+          $('.back-to-top').fadeIn(duration);
         } else {
-          $('.back-to-top').fadeOut(400);
+          $('.back-to-top').fadeOut(duration);
         }
       });
 
