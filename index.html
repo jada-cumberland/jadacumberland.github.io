@@ -56,7 +56,7 @@
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
               <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
+                <a class="nav-link" href="#">
                   Home
                 </a>
               </li>
@@ -75,6 +75,11 @@
                   Projects
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/">
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -82,7 +87,7 @@
         <!-- Mobile Menu Start -->
         <ul class="onepage-nev mobile-menu">
           <li>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -91,7 +96,10 @@
             <a href="#resume">Resume</a>
           </li>
           <li>
-            <a href="#portfolios">portfolios</a>
+            <a href="#portfolios">Projects</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
           </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -141,7 +149,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
               <h3>About Me</h3>
-              <p text-align=justify>Hi! My name is Jada Cumberland, a cyber operations student with a 4.0 GPA at Old Dominion University (NSA-CAE designated). I am experienced in security script analysis and have a track record of identifying and resolving critical containerization issues, resulting in significant cost savings. I am also knowledgeable in basic network security controls and administration. I am certified with the CompTIA Security+ and GIAC GSEC, with additional skills in programming (Python, Java, C++, JavaScript), scripting (Bash, PowerShell), and data analysis. I have experience with basic Linux and Windows operations and commands, and some coursework experience with reverse engineering and malware analysis (IDA Pro). My coursework has also given me basic experience with the MIPS, Windows x86, ARM assembly languages. In my free time, I enjoy playing/writing music, writing poetry, archery, reading, and video games. After graduation, I plan to pursue an MS in Cybersecurity at Old Dominion University with a December 2026 completion date.</p>
+              <p text-align=justify>Hi! My name is Jada Cumberland, a cyber operations student with a 4.0 GPA at Old Dominion University (NSA-CAE designated). I am experienced in security script analysis and have a track record of identifying and resolving critical containerization issues, resulting in significant cost savings. I am also knowledgeable in basic network security controls and administration. I am certified with the CompTIA Security+ and GIAC GSEC, with additional skills in programming (Python, Java, C++, JavaScript), scripting (Bash, PowerShell), and data analysis. I have experience with basic Linux and Windows operations and commands, and some coursework experience with reverse engineering and malware analysis (IDA Pro). My coursework has also given me basic experience with the MIPS, Windows x86, ARM assembly languages. In my free time, I enjoy playing/writing music, writing poetry, archery, reading, and video games. After graduation, I plan to pursue an MS in Cybersecurity at Old Dominion University with a December 2025 completion date.</p>
               <div class="about-profile">
                 <ul class="admin-profile">
                   <li><span class="pro-title"> Name </span> <span class="pro-detail">Jada Cumberland</span></li>
@@ -288,13 +296,13 @@
     <!-- Portfolio Section -->
     <section id="portfolios" class="section-padding">
       <!-- Container Starts -->
-      <div class="container">        
+      <div class="container">
         <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Projects & Works</h2>
         <div class="row">          
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="filter active btn btn-common" data-filter="all">
+              <a class="filter btn btn-common" data-filter="all">
                 All 
               </a>
               <a class="filter btn btn-common" data-filter=".programming">
@@ -309,14 +317,13 @@
               <a class="filter btn btn-common" data-filter=".certificates">
                 Certificates 
               </a>
-
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
           </div>
 
           <!-- Portfolio Recent portfolios -->
 
-          <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+          <div id="portfolio" class="mix-container row wow fadeInDown" data-wow-delay="0.4s">
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix programming">
               <div class="portfolio-item">
                 <div class="shot-item">
@@ -440,7 +447,7 @@
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup/dist/mixitup.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/wow.js"></script>

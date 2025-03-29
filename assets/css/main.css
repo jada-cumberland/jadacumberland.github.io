@@ -126,7 +126,7 @@ ul li, ol li {
 }
 
 .btn:focus,
-.btn:active {
+.btn:mixitup-control-active {
   box-shadow: none;
   outline: none;
   color: #fff;
@@ -789,7 +789,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #portfolio .mix {
-  display: none;
+
 }
 
 .controls {
@@ -797,7 +797,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   padding: 0px 0px 20px;
 }
 
-.controls .active {
+.controls .mixitup-control-active {
   color: #6d2a70 !important;
   border-color: #6d2a70;
   background: transparent;

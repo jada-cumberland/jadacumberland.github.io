@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<!-- Article Section Start -->
+<section id="services" class="services section-padding">
+  <h2 class="section-title flipInX">{{ title }}</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="services-item" data-wow-delay="0.5s">
+          <div class="services-content">
+            <div class="img-thumb" data-wow-delay="0.3s">
+              <img class="img-fluid" src={{ image_source }} alt="">
+            </div>
+            {{ content | safe }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Article Section End -->

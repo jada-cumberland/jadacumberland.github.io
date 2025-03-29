@@ -7,9 +7,19 @@
     /* 
    MixitUp
    ========================================================================== */
-  $('#portfolios').mixItUp();
-
-  /* 
+    var mixer = mixitup('.mix-container', {
+        animation: {
+            duration: 350,
+            effects: 'fade translateZ(-100px)',
+            easing: 'ease'
+        },
+        selectors: {
+            target: '.mix',
+            control: '[data-filter]'
+        }
+    });
+    mixer.show();
+  /*
    One Page Navigation & wow js
    ========================================================================== */
     var OnePNav = $('.onepage-nev');
