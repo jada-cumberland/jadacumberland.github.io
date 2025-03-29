@@ -1,2 +1,4 @@
 # jadacumberland.github.io
-A single html page hosted for jadacumberland.com personal website. 
+
+A website hosted for www.jadacumberland.com personal website. Forked from https://ozguralp.com. Powered
+by [11ty](https://11ty.dev).
