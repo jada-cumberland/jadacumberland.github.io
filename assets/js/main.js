@@ -8,6 +8,9 @@
    MixitUp
    ========================================================================== */
     var mixer = mixitup('.mix-container', {
+        load: {
+            sort: 'post-date:desc'
+        },
         animation: {
             duration: 350,
             effects: 'fade translateZ(-100px)',
