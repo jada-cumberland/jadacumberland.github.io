@@ -2,22 +2,21 @@
 layout: base
 ---
 
-<!-- Article Section Start -->
-<section id="services" class="services section-padding">
-  <h2 class="section-title flipInX">{{ title }}</h2>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <div class="services-item" data-wow-delay="0.5s">
-          <div class="services-content">
-            <div class="img-thumb" data-wow-delay="0.3s">
-              <img class="img-fluid" src="{{ image_source }}" alt="Image for {{ description }}">
-            </div>
-            {{ content | safe }}
-          </div>
+<!-- Title Image Section Start -->
+<div class="image-bg" style="background:url('{{ image_source }}') no-repeat;background-size: cover;"
+     alt="Image for {{ description }}">
+    <div class="overlay"></div>
+    <div class="col-md-12 col-sm-12 text-center">
+        <div class="contents">
+            <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">{{ title }}</h2>
+            <p class="script-font wow fadeInUp" data-wow-delay="0.6s">{{ subtitle }}</p>
+            <p class="post-meta wow fadeInUp" data-wow-delay="0.8s">Jada Cumberland | {{ page.date | postDate }}</p>
         </div>
-      </div>
     </div>
-  </div>
-</section>
+</div>
+
+<!-- Article Section Begin -->
+<div class="post-content wow fadeInUp" data-wow-delay="0.4s">
+    {{ content | safe }}
+</div>
 <!-- Article Section End -->

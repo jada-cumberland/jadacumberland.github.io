@@ -471,7 +471,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar-brand img {
-  width: 10%;
+  width: 17%;
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
@@ -782,10 +782,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin: 0px;
 }
 
-#portfolio .mix {
-
-}
-
 .controls {
   text-align: center;
   padding: 0px 0px 20px;
@@ -907,9 +903,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   padding: 48px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-}
-
-.services-item {
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -951,7 +944,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .blog-list {
   background: #fff;
   border-radius: 4px;
-  padding: 48px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   -webkit-transition: all 0.5s ease-in-out;
@@ -964,6 +956,24 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .blog-list a:hover{
   color: #6d2a70;
+}
+
+.blog-list .services-content {
+  padding: 10px 10px;
+}
+
+/* Posts */
+.post-meta {
+  font-size: 20px !important;
+}
+
+.post-content {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.post-content p {
+  font-size: 20px !important;
 }
 
 .form-control {
