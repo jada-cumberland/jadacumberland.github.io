@@ -965,6 +965,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .post-content {
   padding: 20px 20px;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: center;
 }
 
