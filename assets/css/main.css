@@ -466,10 +466,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: #fff !important;
 }
 
-.top-nav-collapse .navbar-brand {
-  top: 200px;
-}
-
 .navbar-brand img {
   width: 17%;
 }

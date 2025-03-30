@@ -49,9 +49,13 @@
     font-size: 16px;
   }
   .navbar-brand {
-    margin: 5px 0;
+    margin: 0px 0;
     width: 500px;
-    aspect-ratio: 1;
+    img {
+      width: 60px;
+      max-height: 60px;
+      aspect-ratio: 1;
+    }
   }
   #hero-area .contents {
     padding: 100px 0px 60px 0px;
