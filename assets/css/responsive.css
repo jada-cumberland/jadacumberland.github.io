@@ -64,10 +64,10 @@
     font-size: 22px !important;
   }
   #hero-area .contents h5 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
   #hero-area .contents p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .services-item {
     margin-bottom: 20px;
