@@ -61,7 +61,7 @@
     padding: 100px 0px 60px 0px;
   }
   .head-title {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   #hero-area .contents h5 {
     font-size: 32px;
