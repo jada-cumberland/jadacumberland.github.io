@@ -4,24 +4,26 @@
 
   $(window).on('load', function() {
 
-    /* 
+    /*
    MixitUp
    ========================================================================== */
-    var mixer = mixitup('.mix-container', {
-        load: {
-            sort: 'post-date:desc'
-        },
-        animation: {
-            duration: 350,
-            effects: 'fade translateZ(-100px)',
-            easing: 'ease'
-        },
-        selectors: {
-            target: '.mix',
-            control: '[data-filter]'
-        }
-    });
-    mixer.show();
+      if (document.getElementsByClassName('mix-container').length > 0) {
+          var mixer = mixitup('.mix-container', {
+              load: {
+                  sort: 'date:desc'
+              },
+              animation: {
+                  duration: 350,
+                  effects: 'fade translateZ(-100px)',
+                  easing: 'ease'
+              },
+              selectors: {
+                  target: '.mix',
+                  control: '[data-filter]'
+              }
+          });
+          mixer.show();
+      }
   /*
    One Page Navigation & wow js
    ========================================================================== */
