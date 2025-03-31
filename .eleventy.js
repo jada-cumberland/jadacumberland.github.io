@@ -9,6 +9,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
+    eleventyConfig.addFilter("sortDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toISODate();
+    })
 
     // Category filter config
     eleventyConfig.addFilter('categoryFilter', function(collection, category) {
