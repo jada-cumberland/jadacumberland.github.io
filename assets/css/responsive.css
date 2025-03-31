@@ -50,7 +50,7 @@
   }
   .navbar-brand {
     margin: 0px 0;
-    width: 500px;
+    width: 40%;
     img {
       width: 60px;
       max-height: 60px;
@@ -60,7 +60,7 @@
   #hero-area .contents {
     padding: 100px 0px 60px 0px;
   }
-  .head-title {
+  h1, h2 {
     font-size: 22px !important;
   }
   #hero-area .contents h5 {
@@ -69,6 +69,7 @@
   #hero-area .contents p {
     font-size: 20px !important;
   }
+
   .services-item {
     margin-bottom: 20px;
   }

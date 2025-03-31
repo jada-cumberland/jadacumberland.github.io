@@ -465,9 +465,13 @@ a.back-to-top:hover, a.back-to-top:focus {
   animation-name: fadeInDown;
   background: #fff !important;
 }
-
-.navbar-brand img {
+.navbar-brand {
   width: 15%;
+  img {
+    width: 550px;
+    max-height: 550px;
+    aspect-ratio: 1;
+  }
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
