@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- LOOK INTO GOOGLE ANALYTICS -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+-->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="referrer" content="no-referrer"/>
+    <meta name="robots" content="noindex">
+    <title>Jada Cumberland</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/nivo-lightbox.css">
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+</head>
+<body>
+<!-- Header Area wrapper Starts -->
+<header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand"><img class="img-fluid d-flex align-items-center" src="/assets/img/Monogram.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-menu"></span>
+                    <span class="icon-menu"></span>
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#resume">
+                            Resume
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#portfolios">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/blog/">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="onepage-nev mobile-menu">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/#about">About</a>
+            </li>
+            <li>
+                <a href="/#resume">Resume</a>
+            </li>
+            <li>
+                <a href="/#portfolios">Projects</a>
+            </li>
+            <li>
+                <a href="/blog/">Blog</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+</header>
+
+
+<!-- Title Image Section Start -->
+<div class="image-bg" style="background:url('/assets/img/gallery/setup_script.jpg') no-repeat;background-size: cover;">
+    <div class="overlay"></div>
+    <div class="col-md-12 col-sm-12 text-center">
+        <div class="contents">
+            <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Setup Script, Part 1</h2>
+            <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Automating VM setup with Bash.</p>
+            <p class="post-meta wow fadeInUp" data-wow-delay="0.8s">Jada Cumberland | Apr 7, 2025</p>
+        </div>
+    </div>
+</div>
+
+<!-- Article Section Begin -->
+<div class="post-content wow fadeInUp" data-wow-delay="0.4s">
+    <h1>Introduction</h1>
+<p>This week, I started a <a href="https://github.com/jada-cumberland/linux_setup">script</a> to automate customization and setup of my personal Linux VMs, allowing me to spend more time on projects and practice. I plan to add more to this script as time allows.
+<br><br></p>
+<h1>Objectives</h1>
+<p>My objectives for the first edition of this script were as follows:</p>
+<ul>
+<li>Automate execution of <a href="https://github.com/Dewalt-arch/pimpmykali">pimpmykali</a> for Kali Linux instances.</li>
+<li>Add command line aliases for <code>openvpn</code> files.
+<br><br></li>
+</ul>
+<h2>PimpMyKali</h2>
+<p>PimpMyKali is a script used to install necessary fixes and useful security scripts to Kali Linux. In this project, I first test if the VM is an instance of Kali using <code>uname -a</code>, then download the script using <code>git clone</code>, and run it. The <code>--all</code> and <code>--upgrade</code> flags allow the script to run without user input.
+<br><br>
+<img src="/assets/img/posts/setup1.1.png" alt="">
+<br><br></p>
+<h2>Aliases</h2>
+<p>Aliases are shorthand keywords used to quickly reference commands in a Linux terminal. While some are already set by default (e.g. <code>ls -l</code> = <code>ll</code> in zsh), it is also possible for the user to add their own by editing the configuration file. For now, the .zshrc configuration file is used as that is in Kali Linux's zsh terminal, but I plan to update this to utilize the appropriate configuration file depending on the terminal.
+<br><br>
+My first step was adding a section header to the .zshrc file and adding the <code>sudo</code> alias if it did not already exist. This allows me to use sudo with all future aliases I add to the terminal.
+<br><br>
+My next step was actually finding the .ovpn files. After some consideration, I decided the best implementation was adding a <code>resources</code> directory in the current working directory with the appropriate .ovpn files. This would allow others to use the script with their own files provided they added the new directory. While I initially counted the underscores in each file name (2 for HackTheBox Starting Point, 1 for HackTheBox Labs, and 0 for TryHackMe), I found this to be unreliable at best. Instead, I decided to prepend the filenames with specific strings (e.g. &quot;lab&quot; for HTB Lab files) to identify them, making it easy to expand this section later. For each file name found in the <code>resources</code> directory, I added an associated alias line to the .zshrc using <code>echo</code> and output redirection (<code>&gt;&gt;</code>).
+<br><br>
+<img src="/assets/img/posts/setup1.2.png" alt="">
+<br><br>
+Finally, if it was not already there, I moved the <code>resources</code> directory to the user's home directory to allow for easy location later on.
+<br><br></p>
+<h1>Next Steps</h1>
+<p>Having completed this initial phase of the script, I plan to add more features in the future. This will include:</p>
+<ul>
+<li>Terminal Customization</li>
+<li>Aliases for personal scripts</li>
+<li>Command line flags to partially execute the script</li>
+</ul>
+
+</div>
+<!-- Article Section End -->
+
+<!-- Footer Section Start -->
+<footer class="footer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                    <ul class="social-icon">
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/in/jada-cumberland"><i
+                                        class="icon-social-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="https://github.com/jada-cumberland"><i
+                                        class="icon-social-github"></i></a>
+                        </li>
+                    </ul>
+                    <p>Copyright © 2025 Jada Cumberland<br> All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Go to Top Link -->
+<a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+</a>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.counterup.min.js"></script>
+<script src="/assets/js/mixitup.min.js"></script>
+<script src="/assets/js/waypoints.min.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/jquery.nav.js"></script>
+<script src="/assets/js/jquery.easing.min.js"></script>
+<script src="/assets/js/nivo-lightbox.js"></script>
+<script src="/assets/js/jquery.slicknav.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
