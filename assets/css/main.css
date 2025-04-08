@@ -964,7 +964,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   width: 100%;
 }
 
-input[type="checkbox" i]:disabled {
+input[type="checkbox"] {
   margin: 5px !important;
 }
 
