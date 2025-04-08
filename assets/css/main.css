@@ -960,6 +960,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-size: 20px !important;
 }
 
+.post-content img {
+  width: 100%;
+}
+
 .form-control {
   width: 100%;
   margin-bottom: 20px;
