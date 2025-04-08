@@ -964,6 +964,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   width: 100%;
 }
 
+input[type="checkbox" i]:disabled {
+  margin: 5px !important;
+}
+
 .form-control {
   width: 100%;
   margin-bottom: 20px;

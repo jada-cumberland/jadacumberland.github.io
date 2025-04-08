@@ -1,4 +1,6 @@
 const {DateTime} = require('luxon');
+const mdItTasks = require("markdown-it-task-checkbox");
+
 
 module.exports = function(eleventyConfig) {
     // Ignore .gitignore
@@ -18,6 +20,9 @@ module.exports = function(eleventyConfig) {
         if (!category) return collection;
         return collection.filter(item => item.data.category === category);
     });
+
+    // Markdown checkbox config
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(mdItTasks));
 
     return {
         dir: {

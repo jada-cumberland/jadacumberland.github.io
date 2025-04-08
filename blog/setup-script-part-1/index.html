@@ -76,7 +76,7 @@
                             Projects
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/blog/">
                             Blog
                         </a>
@@ -127,12 +127,12 @@
 <p>This week, I started a <a href="https://github.com/jada-cumberland/linux_setup">script</a> to automate customization and setup of my personal Linux VMs, allowing me to spend more time on projects and practice. I plan to add more to this script as time allows.
 <br><br></p>
 <h1>Objectives</h1>
-<p>My objectives for the first edition of this script were as follows:</p>
-<ul>
-<li>Automate execution of <a href="https://github.com/Dewalt-arch/pimpmykali">pimpmykali</a> for Kali Linux instances.</li>
-<li>Add command line aliases for <code>openvpn</code> files.
-<br><br></li>
+<p>My objectives for the first edition of this script were as follows:<br></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Automate execution of <a href="https://github.com/Dewalt-arch/pimpmykali">pimpmykali</a> for Kali Linux instances.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Add command line aliases for <code>openvpn</code> files.</label></li>
 </ul>
+<br>
 <h2>PimpMyKali</h2>
 <p>PimpMyKali is a script used to install necessary fixes and useful security scripts to Kali Linux. In this project, I first test if the VM is an instance of Kali using <code>uname -a</code>, then download the script using <code>git clone</code>, and run it. The <code>--all</code> and <code>--upgrade</code> flags allow the script to run without user input.
 <br><br>
@@ -150,11 +150,12 @@ My next step was actually finding the .ovpn files. After some consideration, I d
 Finally, if it was not already there, I moved the <code>resources</code> directory to the user's home directory to allow for easy location later on.
 <br><br></p>
 <h1>Next Steps</h1>
-<p>Having completed this initial phase of the script, I plan to add more features in the future. This will include:</p>
-<ul>
-<li>Terminal Customization</li>
-<li>Aliases for personal scripts</li>
-<li>Command line flags to partially execute the script</li>
+<p>Having completed this initial phase of the script, I plan to add more features in the future.</p>
+<p>This will include:<br></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> Terminal Customization</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> Aliases for personal scripts</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> Command line flags to partially execute the script</label></li>
 </ul>
 
 </div>
