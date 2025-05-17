@@ -961,7 +961,12 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .post-content img {
-  width: 100%;
+  width: 70%;
+}
+
+.post-content table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type="checkbox"] {

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- LOOK INTO GOOGLE ANALYTICS -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+-->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="referrer" content="no-referrer"/>
+    <meta name="robots" content="noindex">
+    <title>Jada Cumberland</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.svg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/nivo-lightbox.css">
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+</head>
+<body>
+<!-- Header Area wrapper Starts -->
+<header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand"><img class="img-fluid d-flex align-items-center" src="/assets/img/Monogram.svg" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-menu"></span>
+                    <span class="icon-menu"></span>
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#resume">
+                            Resume
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#portfolios">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="onepage-nev mobile-menu">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/#about">About</a>
+            </li>
+            <li>
+                <a href="/#resume">Resume</a>
+            </li>
+            <li>
+                <a href="/#portfolios">Projects</a>
+            </li>
+            <li>
+                <a href="/blog/">Blog</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+</header>
+
+
+<!-- Title Image Section Start -->
+<div class="image-bg" style="background:url('/assets/img/posts/honeypot1/Thumbnail.png') no-repeat;background-size: cover;">
+    <div class="overlay"></div>
+    <div class="col-md-12 col-sm-12 text-center">
+        <div class="contents">
+            <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Honeypot - Analyzing ICS Threats</h2>
+            <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Using Conpot to analyze adversarial ICS traffic</p>
+            <p class="post-meta wow fadeInUp" data-wow-delay="0.8s">Jada Cumberland | May 15, 2025</p>
+        </div>
+    </div>
+</div>
+
+<!-- Article Section Begin -->
+<div class="post-content wow fadeInUp" data-wow-delay="0.4s">
+    <p><em>This report is the result of the final project for my university's Cyber Physical Systems class. My groupmates (<a href="https://www.linkedin.com/in/arica-willis">Arica Willis</a> and <a href="https://www.linkedin.com/in/julia-miller-81a8a3329/">Julia Miller</a>) and I utilized <a href="http://conpot.org">conpot</a> and <a href="https://github.com/telekom-security/tpotce/issues">T-Pot</a> to create a simple industrial control system (ICS) honeypot and observed it for some time. The following is our resulting report. I hope to create more complicated and comprehensive honeypots in the future.</em>
+<br><br>
+<br><br></p>
+<h2><strong>Analyzing Real-World Threats to Industrial Control Systems</strong></h2>
+<p><strong>Prepared by: Julia Miller, Jada Cumberland, Arica Willis</strong></p>
+<p><strong>22 April 2025</strong></p>
+<p><br><br></p>
+<h1><strong>Introduction</strong></h1>
+<p>Technology plays a pivotal role in modern society, deeply embedded in virtually every sector, including the systems that support our daily lives. Critical infrastructure, such as water treatment plants, transportation networks, and energy pipelines, is especially reliant on technological innovation. These infrastructures are managed through interconnected devices known as Industrial Control Systems (ICS), which require consistent, specialized software to ensure operational precision and safety.<br>
+Given the high stakes involved, vulnerabilities within ICS environments pose significant national security risks. A single software malfunction in a facility like a water treatment plant can have catastrophic consequences, as demonstrated by the 2021 cyberattack on the Oldsmar, Florida water supply [3]. Unlike commercial software, ICS components are often customized and receive fewer security updates, leaving them susceptible to cyber threats, particularly from nation-state actors amidst rising geopolitical tensions.<br>
+This project explored the cybersecurity threats facing industrial control systems, with a focus on understanding the tools, techniques, and procedures (TTPs) used by adversaries. Through our research and analysis, we identified several key vulnerabilities common in ICS environments, evaluated real-world case studies, and reviewed potential mitigation strategies. Our findings emphasize the urgent need for proactive defense measures and improved threat intelligence to secure critical infrastructure against evolving cyber threats.</p>
+<p><br><br></p>
+<h1><strong>Design Methodology</strong></h1>
+<p>To accomplish the goal of this project, there were several base-level considerations to keep in mind. Most important among these were funding and time. As college students, we did not have the funds to build a large, distributed honeypot network, nor did we have the time to dedicate to creating our own from scratch. The project was built with four technological layers: a Virtual Private Server (VPS), the Operating System (OS), the honeypot framework, and the honeypot itself.<br>
+The VPS was the backbone upon which the rest of the project was built. Linode was chosen because it was cost-effective and easy to set up, thanks to its shared-CPU infrastructure. It simulated a server with the following specifications: 8 GB RAM, 160 GB storage, and 4 CPU Cores shared with other allocations. The server was hosted in Atlanta, GA. Upon provisioning this VPS, the first step was to create separate accounts with secure passwords for each member of the team. This enabled multiple people to work on the project at once without sharing account details.<br>
+As some team members had experience with Ubuntu Server 24.04, that was selected as the OS. While installation was made simple by Linode, there were some additional steps taken to secure and harden the server instance. The first step was creating a secure password for the root user. After, a Linux account with a strong, unique password was created for each team member using the <em>adduser</em> command. Each account was added to the sudoers group to ensure it had the same capabilities and permissions as a <em>root</em> user. This, again, allowed for all team members to interact with the project at the same time without sharing an account. Several other steps were taken, including adding an asymmetric Secure Shell (SSH) key for each account to utilize secure remote access and closing all unneeded ports to reduce the attack surface. Finally, all packages were updated/upgraded using the <em>sudo apt-get update</em> and <em>sudo apt-get upgrade</em> commands. As the goal of a honeypot is to attract malicious attackers, it was essential to protect the underlying infrastructure of the project.<br>
+The next layer of the project, the framework, was installed on top of the Ubuntu Server OS. T-Pot, which is shorthand for the name “Threat Intelligence Pot”, is a framework for honeypots that contains upwards of 20 ready-to-deploy honeypots and various methods of viewing metrics and analytics. It was developed by Telekom Security in 2015 to make honeypot creation less complicated. Installation and basic setup consisted of the following steps: installing Python, downloading T-Pot from the GitHub repository [1], and installing it with the provided <em>install.sh</em> bash script, and selecting the <strong>HIVE</strong> option when prompted. T-Pot allows for the creation of distributed honeypot networks; while there was no plan to create a complicated setup, every T-Pot must start with a Hive honeypot. Additionally, all honeypots that were unrelated to the project were turned off by commenting them out in the <em>docker-compose.yaml</em> file.<br>
+The specific honeypot used in our project is <em>conpot</em> [2], a honeypot designed to replicate Industrial Control Systems. Conpot was created as an open-source program by a group of developers. It simulates an ICS by running some of the protocols associated with those systems, such as FTP on port 21.<br>
+By letting this setup run for some time, the team was able to gain insight on attackers of Industrial Control Systems, which will be discussed in the Results &amp; Analysis section.</p>
+<p><br><br></p>
+<h1><strong>Results &amp; Analysis</strong></h1>
+<p>Over the course of the month that the conpot was active, there were around 3000 attacks that occurred. A histogram of these attacks can be viewed below in Figure 1. This figure shows the number of total attacks and unique attacks that occurred over time. Most of these attacks were not unique, meaning that multiple attacks were happening from the same IP address, which will be discussed further down in the results section.
+<br><br>
+<img src="/assets/img/posts/honeypot1/Figure1.png" alt=""></p>
+<p>Figure 1: Attack Histogram
+<br><br>
+Below in Figure 2, we can see the attack map for locations where these attacks on the Conpot were occurring. Surprisingly, many of these attacks occurred from inside the United States. However, there was still a significant number of attacks that occurred from the Eastern and Northern Hemispheres. Figure 3 shows a pie chart of the number of attacks by each country. This further showcases the surprising fact that &gt;60% were happening from inside the United States. An important thing to note, however, is that due to technology like VPN, proxies, etc, these statistics are likely slightly skewed than the actual locations of where these attacks might be occurring.
+<br><br>
+<img src="/assets/img/posts/honeypot1/Figure2.png" alt=""></p>
+<p>Figure 2: Attack Map
+<br><br>
+<img src="/assets/img/posts/honeypot1/Figure3.png" alt=""></p>
+<p>Figure 3: Attacks by Country
+<br><br>
+Below, Table 1 showcases the top 6 attackers based on IP address. To summarize these findings, 4/6 of these attackers occurred from, presumably, inside the United States. The top 4 attackers had attacked the Conpot over 100 times in the past month. These attackers' IP addresses were searched using an online database that allows users to report malicious IP addresses, and all of these IP addresses had been reported many times for malicious activity. Specifically, most had been reported for probing and bot activity. The website used to check this was <a href="https://www.abuseipdb.com/">https://www.abuseipdb.com/</a>.
+<br><br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Source IP</th>
+<th style="text-align:center">Count</th>
+<th style="text-align:center">Location</th>
+<th style="text-align:center">Malicious Activity?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">139.144.52.241</td>
+<td style="text-align:center">167</td>
+<td style="text-align:center">Georgia, United States</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">152.32.247.54</td>
+<td style="text-align:center">118</td>
+<td style="text-align:center">Krung Thep Maha, Thailand</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">165.22.141.209</td>
+<td style="text-align:center">118</td>
+<td style="text-align:center">California, United States</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">45.79.194.159</td>
+<td style="text-align:center">118</td>
+<td style="text-align:center">Georgia, United States</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">45.95.147.229</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">Noord-Holland, Netherlands</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">69.164.217.245</td>
+<td style="text-align:center">27</td>
+<td style="text-align:center">New Jersey, United States</td>
+<td style="text-align:center">Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: Top 6 IP Attacks
+<br><br>
+Figure 4 allows us to draw even more conclusions about these attackers. This figure outlines the top 5 destination ports that were attacked on the Conpot as well as the day these attacks occurred over time. Table 2 was broken out from this histogram to further elaborate on what these results mean. To summarize the table, most of these ports are typical for ICS. This makes sense in the context of the project since we are replicating an ICS with our Conpot. Ports 1025 and 50100 are typically dynamic ports, but not necessarily ICS-specific. However, port 10001 is used commonly in air control, and port 2404 is used commonly in the electric power industry, which are both very ICS specific. Lastly, port 161 is used for SNMP, which is not ICS specific but useful for gathering data about a system or device, so it makes sense why attackers would aim for it.
+<br><br>
+<img src="/assets/img/posts/honeypot1/Figure4.png" alt=""></p>
+<p>Figure 4: Attacks by Destination Port
+<br><br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Port</th>
+<th style="text-align:center">Common Use</th>
+<th style="text-align:center">ICS Specific?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1025</td>
+<td style="text-align:center">Dynamic ports</td>
+<td style="text-align:center">No</td>
+</tr>
+<tr>
+<td style="text-align:center">10001</td>
+<td style="text-align:center">Air control</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">2404</td>
+<td style="text-align:center">Electric power industry</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td style="text-align:center">50100</td>
+<td style="text-align:center">Time-sensitive applications or dynamic port</td>
+<td style="text-align:center">Possibly</td>
+</tr>
+<tr>
+<td style="text-align:center">161</td>
+<td style="text-align:center">SNMP</td>
+<td style="text-align:center">Possibly</td>
+</tr>
+</tbody>
+</table>
+<p>Table 2: Destination Port Breakdown
+<br><br></p>
+<h1><strong>Conclusion</strong></h1>
+<p>Our team identified several findings from this project. To start, one must learn about adversaries and their tools, techniques, and procedures (TTP) to combat them. Every day, those seeking to harm society using attacks on ICS improve their methods. As such, the defense instilled in these ICS must evolve to match them. This is made difficult by the specialized technologies and embedded systems utilized in these environments. Some organizations and agencies have taken action to make defense easier, however. For example, the US Cybersecurity &amp; Infrastructure Security Agency (CISA) released the Cyber Security Evaluation Tool (CSET) to reduce “the risk to the nation’s critical infrastructure” [4] by guiding system owners through detection techniques to understand their assets. It also shows which assets are in compliance with current security standards and which are not. This streamlines the process of enhancing security controls and helps protect the critical infrastructure of our society.</p>
+<p>Throughout our project, we observed firsthand how attackers target industrial environments using a mix of automated scanning tools and manually executed exploits. Using a simulated ICS honeypot environment built with Conpot and deployed through the T-Pot framework, we were able to collect data on real-world probing and intrusion attempts. These interactions highlight a persistent interest from adversaries in exploiting services that mimic critical infrastructure systems.</p>
+<p>Industrial Control Systems (ICS) face both domestic and international threats. International threats include state-sponsored groups, which target ICS to disrupt critical services or gather information. Domestic threats may stem from insiders or lone actors with access or knowledge of control systems, as seen in the 2021 Oldsmar, Florida water plant incident [3]. To defend against both, organizations should implement strict access controls, monitor user behavior, and stay current with advisories from agencies like CISA and industry ISACs.</p>
+<p>Attribution of ICS cyber threats is difficult due to the use of VPNs, proxies, and botnets, which attackers employ to hide their true locations. This makes it hard to distinguish between a domestic threat and a foreign adversary. Rather than relying on IP addresses, organizations should use behavioral analytics, deploy honeypots to study attacker methods, and integrate external threat intelligence feeds. Collaborating with national cybersecurity agencies can also improve incident response and attribution accuracy.
+<br><br></p>
+<h1><strong>Closing</strong></h1>
+<p>There are a great many cyber threats advancing in sophistication on a daily basis. As it currently stands, our society could be crippled by a single blow to our critical infrastructure. It is important to conduct experiments and research such as this project to better understand our adversaries and improve the defensive mechanisms of our technology into the future.
+<br><br></p>
+<h1><strong>Resources</strong></h1>
+<p>[1] “telekom-security/tpotce,” GitHub, Dec. 10, 2020. <a href="https://github.com/telekom-security/tpotce">https://github.com/telekom-security/tpotce</a></p>
+<p>[2] “Conpot,” conpot.org. <a href="http://conpot.org/">http://conpot.org/</a></p>
+<p>[3] A. Greenberg, “A Hacker Tried to Poison a Florida City’s Water Supply,” Wired, Feb. 08, 2021. <a href="https://www.wired.com/story/oldsmar-florida-water-utility-hack/">https://www.wired.com/story/oldsmar-florida-water-utility-ha</a>ck/</p>
+<p>[4] “cisagov/cset,” GitHub, Aug. 31, 2023. <a href="https://github.com/cisagov/cset">https://github.com/cisagov/cset</a></p>
+
+</div>
+<!-- Article Section End -->
+
+<!-- Footer Section Start -->
+<footer class="footer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                    <ul class="social-icon">
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/in/jada-cumberland"><i
+                                        class="icon-social-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="https://github.com/jada-cumberland"><i
+                                        class="icon-social-github"></i></a>
+                        </li>
+                    </ul>
+                    <p>Copyright © 2025 Jada Cumberland<br> All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Go to Top Link -->
+<a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+</a>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.counterup.min.js"></script>
+<script src="/assets/js/mixitup.min.js"></script>
+<script src="/assets/js/waypoints.min.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/jquery.nav.js"></script>
+<script src="/assets/js/jquery.easing.min.js"></script>
+<script src="/assets/js/nivo-lightbox.js"></script>
+<script src="/assets/js/jquery.slicknav.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
