@@ -4,6 +4,7 @@ subtitle: "Using Conpot to analyze adversarial ICS traffic"
 layout: post
 category: "project"
 image_source: "/assets/img/posts/honeypot1/Thumbnail.png"
+date: 2025-05-16
 ---
 
 *This report is the result of the final project for my university's Cyber Physical Systems class. My groupmates ([Arica Willis](https://www.linkedin.com/in/arica-willis) and [Julia Miller](https://www.linkedin.com/in/julia-miller-81a8a3329/)) and I utilized [conpot](http://conpot.org) and [T-Pot](https://github.com/telekom-security/tpotce/issues) to create a simple industrial control system (ICS) honeypot and observed it for some time. The following is our resulting report. I hope to create more complicated and comprehensive honeypots in the future.*
