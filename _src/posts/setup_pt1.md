@@ -4,7 +4,7 @@ subtitle: "Automating VM setup with Bash."
 layout: post
 category: "project"
 image_source: "/assets/img/gallery/setup_script.jpg"
-date: 2025-05-16
+date: 2025-04-08
 ---
 
 # Introduction
