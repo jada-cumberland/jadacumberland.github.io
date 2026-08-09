@@ -4,6 +4,7 @@ subtitle: "An introduction to me and my blog."
 layout: post
 category: "other"
 image_source: "/assets/img/portraits/ship-tour.jpg"
+date: 2025-03-30
 ---
 
 # $whoami
